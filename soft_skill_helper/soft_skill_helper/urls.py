@@ -15,10 +15,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from greatpage.views import index
+from django.urls import path, include
+from greatpage import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('greatpage/', index), #127.0.0.1.8000/greatpage/
+    path('', include('greatpage.urls')), #127.0.0.1.8000/greatpage/
 ]
