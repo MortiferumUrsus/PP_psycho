@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from greatpage.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('greatpage/', index), #127.0.0.1.8000/greatpage/
 ]
