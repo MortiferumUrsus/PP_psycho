@@ -3,5 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index), #127.0.0.1.8000/greatpage/
+    path('', views.index), #127.0.0.1.8000/
+    path('info/', views.info),
 ]
