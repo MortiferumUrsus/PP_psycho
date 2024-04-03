@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from greatpage import views
+from greatpage.views import page_not_found
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('greatpage.urls')), #127.0.0.1.8000/greatpage/
 ]
+
+handler404 = page_not_found
