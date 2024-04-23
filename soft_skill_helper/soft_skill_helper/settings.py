@@ -55,7 +55,9 @@ ROOT_URLCONF = 'soft_skill_helper.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates',
+        ], #Нестандартные пути к файлам шаблонов
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

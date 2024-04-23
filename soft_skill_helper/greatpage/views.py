@@ -1,9 +1,20 @@
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import render
+from django.template.loader import render_to_string
 
+menu = ["О сайте", "Обратная связь", "Войти", "Телеграм бот"]
 
 def index(request): #HttpRequest
-    return HttpResponse("<h1>Главная страничка готова</h1>")
+    #t = render_to_string('greatpage/index.html') #Шаблоны писать только в UTF-8!
+    #return HttpResponse(t)
+    data ={
+        'title': 'Главная страничка',
+        'menu': menu,
+    }
+    return render(request, 'greatpage/index.html', context=data)
+
+def about(request):
+    return render(request, 'greatpage/about.html', {'title': 'Инфа о сайте'})
 
 def info(request, info_id):
     return HttpResponse(f"<h1>Страничка с инфой готова</h1><p>id: {info_id}</p>")
