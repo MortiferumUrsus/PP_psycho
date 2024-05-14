@@ -14,7 +14,7 @@ def index(request): #HttpRequest
     return render(request, 'greatpage/index.html', context=data)
 
 def about(request):
-    return render(request, 'greatpage/about.html', {'title': 'Инфа о сайте'})
+    return render(request, 'greatpage/contacts.html', {'title': 'Инфа о сайте'})
 
 def info(request, info_id):
     return HttpResponse(f"<h1>Страничка с инфой готова</h1><p>id: {info_id}</p>")

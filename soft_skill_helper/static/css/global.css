@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-playfair-display: "Playfair Display";
+  --heading-1: Orbitron;
+  --font-newtown: Newtown;
+
+  /* font sizes */
+  --font-size-11xl: 30px;
+  --font-size-5xl: 24px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+  --font-size-29xl: 48px;
+  --font-size-19xl: 38px;
+  --font-size-10xl: 29px;
+  --heading-1-size: 70px;
+  --font-size-37xl: 56px;
+  --font-size-23xl: 42px;
+  --font-size-71xl: 90px;
+  --font-size-26xl: 45px;
+  --font-size-8xl: 27px;
+  --font-size-81xl: 100px;
+  --font-size-31xl: 50px;
+  --font-size-mid: 17px;
+  --font-size-lgi: 19px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color: #b80000;
+  --color-firebrick-100: rgba(184, 0, 0, 0.8);
+  --color-gainsboro-100: #e6e6e6;
+  --color-gainsboro-200: #d9d9d9;
+  --color-red-200: #e20006;
+  --color-slategray-100: rgba(90, 109, 120, 0.8);
+  --color-aliceblue: rgba(219, 240, 255, 0.7);
+
+  /* Gaps */
+  --gap-xl: 20px;
+  --gap-11xl: 30px;
+  --gap-8xs: 5px;
+  --gap-40xl: 59px;
+  --gap-10xl: 29px;
+
+  /* Paddings */
+  --padding-10xl: 29px;
+  --padding-13xl: 32px;
+  --padding-12xl: 31px;
+  --padding-4xl: 23px;
+  --padding-30xl: 49px;
+  --padding-28xl: 47px;
+  --padding-xl: 20px;
+  --padding-5xs: 8px;
+  --padding-17xl: 36px;
+  --padding-7xs: 6px;
+  --padding-7xl: 26px;
+  --padding-14xl: 33px;
+  --padding-mini: 15px;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-5xl-7: 24.7px;
+}
